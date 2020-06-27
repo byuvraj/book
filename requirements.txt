@@ -1,4 +1,3 @@
 flask
 sqlalchemy
-sqlalchemy.orm
 flask_session
