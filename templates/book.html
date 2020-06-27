@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block body %}
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand" href="/book"></a> Book</a>
+    <form class="form-inline" method="post" action="{{url_for('search_book')}}">
+      <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  <a class="navbar" href="/logout"><button class="btn btn-outline-success my-2 my-sm-0">Logout</button></a>
+  </nav>
+<div class="jumbotron text-center">
+    <h1>Welcome to book reviews</h1>
+    <p>Lets see what we have</p>
+</div>
+  
+</div>
+<div class="row" style="margin: 15px"> 
+  {%for book in books_found %}
+  <div class="col-sm-3">
+    <div class="card border-success mb-3">
+      <div class="card-body text-success">
+        <a href="/review/{{book.title}}">Title:{{book.title}} by Author: {{book.author}}</a>
+      </div>
+    </div>
+  </div>
+  {%endfor%}
+</div>
+  {{name}}
+  {%if not message == ''%}
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+          <div class="card text-center" >
+              <div class="card-header" style="color: red">
+                  Error
+              </div>
+                <div class="card-body"> 
+                  <h3 style="color: red">{{message}}</h3>
+                </div>
+            </div>
+    <div class="col-sm-4"></div>    
+    </div>
+  </div>
+{%endif%}
+  
+{% endblock %}

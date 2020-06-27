@@ -1,0 +1,86 @@
+$color: green;
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.container > div{
+    background-color: seashell;
+    padding: 20px;
+    margin: 20px;
+    font-size: 24px;
+    width: 225px;
+}
+@media (min-width: 800px) {
+    h5::after{
+        content: "Beyond your imagination";
+    }            
+}
+@media (max-width: 799px) {
+    h5::after{
+        content: "Welcome to my world";
+    }            
+}
+#top {
+    margin-left: 125px;
+    margin-right: 125px;
+    text-align-last: center;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: yellowgreen;
+    height: 85PX;
+    width: auto;
+}
+#body{
+    text-align: justify ;
+    font-size: 28px;
+    font-family: Monotype Corsiva;
+    color: darkorange;
+    padding: 120px;
+}
+#suggesion{
+    margin-left: 8px;
+    padding: 6px;
+    font-family: monospace;
+    background-color:lightgray;
+    color:darkslategrey;
+}
+.name{
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(252, 46, 142);
+    font-weight: bold;
+}
+table{
+    margin-left: 30%;
+    border: 1px solid orchid;
+    border-collapse: collapse;
+}
+td{
+    font-size: 28px;
+    border: 2px solid;
+    padding: 0.25cm;
+}
+th{
+    border: 2px solid orchid;
+    font-size: 30px;
+    padding: 0.75cm;
+}
+input[type=text] {
+    font-family: monospace;
+    background-color:rgb(158, 215, 233);
+    color: darkslategrey;
+}
+button{
+    background-color: floralwhite;
+    width: 200px;
+    height: 35px;
+}
+button:hover{
+    width: 210pxx;
+    height: 40px;
+    background-color: $color;
+}
+p::selection{
+    color: black;
+    background-color: turquoise;
+}

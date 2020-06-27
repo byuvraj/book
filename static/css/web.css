@@ -1,0 +1,57 @@
+body, html {
+  height: 100%;
+}
+
+.bg {
+  background-image: url("/static/login.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.homepage{
+  margin-left: 25%;
+  margin-top: 25%;
+}
+
+.login_error{
+  font-size: 12px;
+  color: red;
+}
+
+
+table {
+  margin-left: 30%;
+  border: 1px solid orchid;
+  border-collapse: collapse; }
+
+td {
+  font-size: 28px;
+  border: 2px solid;
+  padding: 0.25cm; }
+
+th {
+  border: 2px solid orchid;
+  font-size: 30px;
+  padding: 0.75cm; }
+
+input[type=text] {
+  font-family: monospace;
+  background-color: #9ed7e9;
+  color: darkslategrey; }
+
+button {
+  background-color: floralwhite;
+  width: 180px;
+  height: 35px; }
+
+button:hover {
+  width: 210pxx;
+  height: 40px;
+  background-color: green; }
+
+p::selection {
+  color: black;
+  background-color: turquoise; }
+
+/*# sourceMappingURL=web.css.map */
