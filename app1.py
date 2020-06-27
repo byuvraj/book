@@ -8,7 +8,7 @@ from search import *
 
 app = Flask(__name__)
 
-engine = create_engine("postgresql://postgres:yuvraJ@@localhost:5432/postgres")
+engine = create_engine("postgres://rjmwjpklbssodm:fc5d900a9df31462fab30b7fd752dc1bdbf0432a1931f652be1eb0d5d97510c2@ec2-52-44-55-63.compute-1.amazonaws.com:5432/d8itmsoa2csvlk")
 db =  scoped_session(sessionmaker(bind=engine))
 app.config["SESSION_PERMANENT"]=False
 app.config["SESSION_TYPE"]="filesystem"
